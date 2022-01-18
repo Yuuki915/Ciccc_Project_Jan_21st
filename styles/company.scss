@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&family=Open+Sans:wght@300&display=swap");
+@import "./campany/top";
+@import "./campany/mails";
+@import "./campany/p";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0 15%;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}

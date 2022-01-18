@@ -1,4 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&family=Open+Sans:wght@300&display=swap");
+.choseLang {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+}
+
 .top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,11 +34,17 @@
 
 .top ul li a {
   text-decoration: none;
-  color: #333;
+  color: #666;
   font-size: 0.8rem;
   margin-left: 10px;
   display: block;
   height: 100%;
+}
+
+.horizon {
+  width: 100%;
+  height: 1px;
+  background-color: #f0f0f0;
 }
 
 .sidebar {
@@ -44,8 +57,26 @@
 }
 
 .sidebar .places div {
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   font-size: 0.9rem;
+}
+
+.sidebar .places div .country {
+  color: #666;
+}
+
+.sidebar .places div .email a {
+  color: #222;
+  font-weight: bolder;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar .places div .email a:hover {
+  border-bottom: 2.3px solid #222;
 }
 
 .main-text h1 {
@@ -61,6 +92,7 @@
 .main-text .ps p {
   font-size: 0.9rem;
   padding-top: 1rem;
+  color: #666;
 }
 
 * {
@@ -80,5 +112,24 @@ body {
   display: grid;
   -ms-grid-columns: 70% 30%;
       grid-template-columns: 70% 30%;
+}
+
+/* === ラジオボタンは非表示 ================== */
+#sample1 input[type="radio"] {
+  display: none;
+}
+
+/* === 各ラジオボタンのラベルをボタンに変更 == */
+#sample1 label {
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 2px 2px #999;
+          box-shadow: 2px 2px #999;
+  padding: 2px 6px;
+}
+
+/* === 選択されている言語のラベル色を変更 ==== */
+#sample1 input[type="radio"]:checked + label {
+  background: #ffa64d;
 }
 /*# sourceMappingURL=company.css.map */

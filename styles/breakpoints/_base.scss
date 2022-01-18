@@ -10,6 +10,12 @@ body {
 
 a {
   border: none;
+  text-decoration: none;
+  color: $cWhite;
+}
+a:hover {
+  color: $cBlack;
+  text-decoration: none;
 }
 
 img {
@@ -165,8 +171,6 @@ main {
       transition: transform 0.3s ease 1.6s;
       transform-origin: right;
     }
-
-    
   }
 
   &__sub {

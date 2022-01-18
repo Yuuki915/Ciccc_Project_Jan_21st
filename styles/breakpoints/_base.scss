@@ -126,7 +126,10 @@ main {
   }
 }
 
-.travel {
+// ------------------------
+// main (Exploer Tesla)
+// -------------------------
+.explorer {
   @extend .content-width;
   @extend .mb-lg;
 
@@ -160,6 +163,7 @@ main {
 
   &__sub {
     @extend .mb-sm;
+    font-weight: 800;
   }
 
   &__img {
@@ -184,7 +188,7 @@ main {
     @extend .pb-sm;
 
     &.inview {
-      & .travel__title::before {
+      & .explorer__title::before {
         transform: translateY(-50%);
       }
     }

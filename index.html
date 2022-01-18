@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>StayWorld</title>
     <meta name="description" content="This site is a test site.">
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/">
     <link rel="stylesheet" href="styles/loader.css">
     <script src="scripts/vendors/pace.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
@@ -22,12 +22,16 @@
       <div id="container">
         <div class="mobile-menu__cover"></div>
         <div class="nav-trigger"></div>
+
+        <!---------------------
+           header 
+        ----------------------->
         <header class="header">
           <div class="header__inner appear up">
             <div class="logo item">
-              <img src="images/logo.svg" alt="" class="logo__img" />
-              <span class="logo__stay">Stay</span>
-              <span class="logo__world">World</span>
+              <img src="images/tesla_logo.png" alt="" class="logo__img" height="45"/>
+              <span class="logo__stay"><img src="images/tesla_logo02.png" width="130" height="60"></span>
+              <span class="logo__world">Canda</span>
             </div>
             <nav class="header__nav">
               <ul class="header__ul">
@@ -38,6 +42,10 @@
                 </li>
               </ul>
             </nav>
+
+        <!------------------------
+        mobile-menu.scss  
+        ------------------------->
             <button class="mobile-menu__btn">
               <span></span>
               <span></span>
@@ -45,21 +53,33 @@
             </button>
           </div>
         </header>
+
+        <!----------------------------------
+        hero-slider.scss (Main Slide pics)
+        ----------------------------------->
         <div id="content">
           <div class="hero">
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="hero__title">Enjoy Rich</div>
-                  <img src="images/tesla01.jpeg" alt="" />
+                  <div class="hero__title">Model X</div>
+                  <img src="images/teslaCar01.jpeg" alt="">
                 </div>
                 <div class="swiper-slide">
-                  <div class="hero__title">Fantastic</div>
-                  <img src="images/image-2.jpg" alt="" />
+                  <div class="hero__title">Model S</div>
+                  <img src="images/teslaCar02.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <div class="hero__title">Experience</div>
-                  <img src="images/image-3.jpg" alt="" />
+                  <div class="hero__title">Model Y</div>
+                  <img src="images/teslaCar03.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Solar Roof</div>
+                  <img src="images/teslaSolarRoof.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Solar Panels</div>
+                  <img src="images/teslaSolarPanel.jpg" alt="" />
                 </div>
               </div>
               <div class="hero__footer">
@@ -68,143 +88,161 @@
               </div>
             </div>
           </div>
+
+          <!------------------------
+           sns
+          ------------------------->
           <div id="main-content">
             <aside class="side left">
               <div class="side__inner">
-                <a class="twitter icon tween-animate-title" href="#">Twitter</a>
-                <a class="fb icon tween-animate-title" href="#">Facebook</a>
+                <a class="twitter icon tween-animate-title" href="https://twitter.com/tesla">Twitter</a>
+                <a class="fb icon tween-animate-title" href="https://www.facebook.com/TeslaMotorsCorp/">Facebook</a>
               </div>
             </aside>
+
+          <!------------------------
+            main (Exploer Tesla)
+          ------------------------->
             <main>
-              <section class="travel">
-                <div class="travel__inner">
-                  <div class="travel__img cover-slide">
+              <section class="explorer">
+                <div class="explorer__inner">
+                  <div class="explorer__img cover-slide">
                     <img
                       class="img-zoom"
-                      src="images/image-travel.jpg"
+                      src="images/travelTesla.jpg"
                       alt=""
                     />
                   </div>
-                  <div class="travel__texts appear left">
-                    <div class="travel__texts-inner">
-                      <div class="travel__title main-title item">
-                        <span class="purple">Travel</span>
-                        <span>the world</span>
+                  <div class="explorer__texts appear left">
+                    <div class="explorer__texts-inner">
+                      <div class="explorer__title main-title item">
+                        <span class="purple">Explorer</span>
+                        <span>TESLA</span>
                       </div>
-                      <div class="travel__sub sub-title item">世界中を旅しよう</div>
-                      <div class="travel__description item">
+                      <div class="explorer__sub sub-title item">Let's explorer Tesla</div>
+                      <div class="explorer__description item">
                         <p>
-                          世界１５０ヶ国で<br />利用できる民泊サービスです。
+                          This is for you<br />to find your idel car
                         </p>
-                        <p>あなたの望む宿がきっと見つかります。</p>
+                        <p>It's time to travel from here</p>
                       </div>
-                      <div class="travel__btn item">
-                        <button class="btn filled">もっと詳しく</button>
+                      <div class="explorer__btn item">
+                        <button class="btn filled">Click ▹▹▹</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </section>
-              <section class="houses">
+              
+            <!------------------------
+             main (Find your Tesla)
+            ------------------------->
+              <section class="teslaProduct">
                 <div>
-                  <h2 class="main-title tween-animate-title">Find Your House</h2>
-                  <p class="sub-title tween-animate-title">お気に入りの宿泊先を見つけましょう</p>
+                  <h2 class="main-title tween-animate-title">Find Your TESLA</h2>
+                  <p class="sub-title tween-animate-title">Find your ideal Tesla</p>
                 </div>
-                <div class="houses__inner">
-                  <div class="houses__item">
+                <div class="teslaProduct__inner">
+                  <div class="teslaProduct__item">
                     <div class="cover-slide hover-darken">
                       <div
                         class="bg-img-zoom img-bg50"
-                        style="background-image: url(images/villa-1.jpg)"
+                        style="background-image: url(images/cybertruck.png)"
                       ></div>
                     </div>
-                    <p class="houses__title">House 1</p>
+                    <p class="teslaProduct__title">CyberTruck</p>
                   </div>
-                  <div class="houses__item">
+                  <div class="teslaProduct__item">
                     <div class="cover-slide hover-darken">
                       <div
                         class="bg-img-zoom img-bg50"
-                        style="background-image: url(images/villa-2.jpg)"
+                        style="background-image: url(images/modelS.jpg)"
                       ></div>
                     </div>
-                    <p class="houses__title">House 2</p>
+                    <p class="teslaProduct__title">Model S / Electric</p>
                   </div>
-                  <div class="houses__item">
+                  <div class="teslaProduct__item">
                     <div class="cover-slide hover-darken">
                       <div
                         class="bg-img-zoom img-bg50"
-                        style="background-image: url(images/villa-3.jpg)"
+                        style="background-image: url(images/modelX.jpg)"
                       ></div>
                     </div>
-                    <p class="houses__title">House 3</p>
+                    <p class="teslaProduct__title">Model X / Electric</p>
                   </div>
-                  <div class="houses__item">
+                  <div class="teslaProduct__item">
                     <div class="cover-slide hover-darken">
                       <div
                         class="bg-img-zoom img-bg50"
-                        style="background-image: url(images/villa-4.jpg)"
+                        style="background-image: url(images/model3.jpg)"
                       ></div>
                     </div>
-                    <p class="houses__title">House 4</p>
+                    <p class="teslaProduct__title">Model 3</p>
                   </div>
-                  <div class="houses__item">
+                  <div class="teslaProduct__item">
                     <div class="cover-slide hover-darken">
                       <div
                         class="bg-img-zoom img-bg50"
-                        style="background-image: url(images/villa-5.jpg)"
+                        style="background-image: url(images/modelY.jpg)"
                       ></div>
                     </div>
-                    <p class="houses__title">House 5</p>
+                    <p class="teslaProduct__title">Model Y</p>
                   </div>
-                  <div class="houses__item">
+                  <div class="teslaProduct__item">
                     <div class="cover-slide hover-darken">
                       <div
                         class="bg-img-zoom img-bg50"
-                        style="background-image: url(images/villa-6.jpg)"
+                        style="background-image: url(images/matteBlack.jpg)"
                       ></div>
                     </div>
-                    <p class="houses__title">House 6</p>
+                    <p class="teslaProduct__title">Roadstar</p>
                   </div>
-                  <div class="houses__btn appear up">
-                    <button class="btn slide-bg item">もっと詳しく</button>
+                  <div class="teslaProduct__btn appear up">
+                    <button class="btn slide-bg item">More Detail<a href="service.html">.</a></button>
                   </div>
                 </div>
               </section>
-              <section class="popular">
-                <div class="popular__header">
-                  <h2 class="main-title tween-animate-title">Popular Place</h2>
-                  <p class="sub-title tween-animate-title">人気の観光地で宿泊先を見つけましょう</p>
+
+            <!------------------------
+             Other features 
+            ------------------------->
+              <section class="otherFeature">
+                <div class="otherFeature__header">
+                  <h2 class="main-title tween-animate-title">Other Features</h2>
+                  <p class="sub-title tween-animate-title">In addition to cars, Tesla has a variety of businesses.</p>
                 </div>
-                <div class="popular__inner appear up">
-                  <div class="popular__container">
-                    <div class="popular__item item">
-                      <div class="popular__img">
-                        <img src="images/image-p1.jpg" alt="" />
+                <div class="otherFeature__inner appear up">
+                  <div class="otherFeature__container">
+                    <div class="otherFeature__item item">
+                      <div class="otherFeature__img">
+                        <img src="images/teslaPowerwell.png" alt="" />
                       </div>
-                      <div class="popular__title">パリ</div>
+                      <div class="otherFeature__title">Powerwall</div>
                     </div>
-                    <div class="popular__item item">
-                      <div class="popular__img">
-                        <img src="images/image-p2.jpg" alt="" />
+                    <div class="otherFeature__item item">
+                      <div class="otherFeature__img">
+                        <img src="images/solarRoofTesla.jpg" alt="" />
                       </div>
-                      <div class="popular__title">ニューヨーク</div>
+                      <div class="otherFeature__title">Solar Roof</div>
                     </div>
-                    <div class="popular__item item">
-                      <div class="popular__img">
-                        <img src="images/image-p3.jpg" alt="" />
+                    <div class="otherFeature__item item">
+                      <div class="otherFeature__img">
+                        <img src="images/solarPanelsTesla.jpg" alt="" />
                       </div>
-                      <div class="popular__title">香港</div>
+                      <div class="otherFeature__title">Solar Panels</div>
                     </div>
-                    <div class="popular__item item">
-                      <div class="popular__img">
-                        <img src="images/image-p4.jpg" alt="" />
+                    <div class="otherFeature__item item">
+                      <div class="otherFeature__img">
+                        <img src="images/superCharger.jpeg" alt="" />
                       </div>
-                      <div class="popular__title">大阪</div>
+                      <div class="otherFeature__title">Super Charger</div>
                     </div>
-                    <div class="popular__btn appear up">
+                    <div class="otherFeature__btn appear up">
                       <button class="btn cover-3d item">
                         <span>
-                          一覧から探す
+                          <a href="https://www.tesla.com/powerwall">
+                            More Details
+                          </a>
                         </span>
                       </button>
                     </div>
@@ -214,53 +252,57 @@
             </main>
             <aside class="side right">
               <div class="side__inner">
-                <span class="tween-animate-title">&copy;Code Mafia</span>
+                <span class="tween-animate-title">&copy; Group 5</span>
               </div>
             </aside>
           </div>
         </div>
         <footer class="footer appear up">
           <div class="logo item">
-            <img src="images/logo.svg" alt="" class="logo__img" />
-            <span class="logo__stay">Stay</span>
-            <span class="logo__world">World</span>
+            <img src="images/tesla_logo.png" alt="" class="logo__img" />
+            <span class="logo__stay"><img src="images/tesla_logo02.png" width="130" height="60"></span>
+            <span class="logo__world">Canada</span>
           </div>
           <nav class="footer__nav">
             <ul class="footer__ul">
-              <li class="footer__li item"><a href="#">Service</a></li>
-              <li class="footer__li item"><a href="#">Contact</a></li>
-              <li class="footer__li item"><a href="#">Company</a></li>
-              <li class="footer__li item"><a href="#">Sitemap</a></li>
+              <li class="footer__li item"><a href="service.html">Service</a></li>
+              <li class="footer__li item"><a href="contact.html">Contact</a></li>
+              <li class="footer__li item"><a href="company.html">Company</a></li>
+              <li class="footer__li item"><a href="https://www.tesla.com/findus?v=2&bounds=51.983501615631575%2C-67.62597775%2C25.500764318167%2C-130.90722775&zoom=5&filters=store%2Cservice%2Csupercharger%2Cdestination%20charger%2Cbodyshop%2Cparty">Map</a></li>
             </ul>
             <div class="footer__copyright item">
-              &copy; Code Mafia
+              &copy; Group 5
             </div>
           </nav>
         </footer>
       </div>
+
+      <!------------------------
+        mobile-menu.scss  
+      ------------------------->
       <nav class="mobile-menu">
         <div class="logo">
-          <img src="images/logo.svg" alt="" class="logo__img" />
-          <span class="logo__stay">Stay</span>
-          <span class="logo__world">World</span>
+          <img src="images/tesla_logo.png" alt="" class="logo__img" />
+          <span class="logo__stay"><img src="images/tesla_logo02.png" width="130" height="60"></span>
+          <span class="logo__world">Canada</span>
         </div>
         <ul class="mobile-menu__main">
           <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#">
+            <a class="mobile-menu__link" href="service.html">
               <span class="main-title">Our Service</span>
-              <span class="sub-title">サービスについて</span>
+              <!-- <span class="sub-title"></span> -->
             </a>
           </li>
           <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#">
+            <a class="mobile-menu__link" href="company.html">
               <span class="main-title">About Us</span>
-              <span class="sub-title">私たちについて</span>
+              <!-- <span class="sub-title"></span> -->
             </a>
           </li>
           <li class="mobile-menu__item">
-            <a class="mobile-menu__link" href="#">
+            <a class="mobile-menu__link" href="contact.html">
               <span class="main-title">Contact Us</span>
-              <span class="sub-title">コンタクト方法</span>
+              <!-- <span class="sub-title"></span> -->
             </a>
           </li>
         </ul>

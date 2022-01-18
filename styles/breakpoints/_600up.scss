@@ -8,14 +8,14 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     flex-wrap: wrap;
 }
 
-.houses {
+.teslaProduct {
     &__item {
         flex-basis: 50%;
         margin-bottom: 60px;
     }
 }
 
-.popular {
+.otherFeature {
     &__container {
         justify-content: space-between;
     }
@@ -25,7 +25,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     }
 }
 
-.travel {
+.explorer {
     &__inner {
         padding: 50px;
     }

@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&family=Open+Sans:wght@300&display=swap");
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .about-h1 {
+  margin: 10px 0;
+}
+
+.top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top ul li {
+  list-style: none;
+}
+
+.top ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.8rem;
+  margin-left: 10px;
+  display: block;
+  height: 100%;
+}
+
+.sidebar {
+  margin-top: 3rem;
+}
+
+.sidebar .firstp {
+  margin: 1rem 0;
+  font-weight: bolder;
+}
+
+.sidebar .places div {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.main-text h1 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin: 2rem 0;
+}
+
+.main-text .ps {
+  margin-right: 4rem;
+}
+
+.main-text .ps p {
+  font-size: 0.9rem;
+  padding-top: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 15%;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+}
+/*# sourceMappingURL=company.css.map */

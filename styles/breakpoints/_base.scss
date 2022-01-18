@@ -7,6 +7,11 @@ body {
   // 記述の順番は、ローマ字→日本語文体。この順番を逆にすると(日本語文体→ローマ字)反映されないことがある。
   font-family: "Kameron", "Noto Sans JP", sans-serif;
 }
+
+a {
+  border: none;
+}
+
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -220,7 +225,7 @@ main {
   }
 }
 
-.popular {
+.otherFeature {
   &__inner {
     position: relative;
     @include p-base($top: 10%, $height: 90%) {
@@ -256,6 +261,13 @@ main {
     text-align: center;
     flex-basis: 100%;
     @extend .mb-lg;
+  }
+  &__btn span a {
+    color: $cBlack;
+    text-decoration: none;
+  }
+  &__btn span a:hover {
+    color: $cWhite;
   }
 
   &__img {

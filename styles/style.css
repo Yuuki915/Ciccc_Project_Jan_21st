@@ -985,6 +985,10 @@ body {
   font-family: "Kameron", "Noto Sans JP", sans-serif;
 }
 
+a {
+  border: none;
+}
+
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -994,7 +998,7 @@ img {
   font-size: 14px;
 }
 
-.font-md, .popular__title {
+.font-md, .otherFeature__title {
   font-size: 17px;
 }
 
@@ -1006,15 +1010,15 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .explorer__sub, .explorer__img, .teslaProduct__title, .popular__title {
+.mb-sm, .explorer__sub, .explorer__img, .teslaProduct__title, .otherFeature__title {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, .explorer, .teslaProduct, .popular__btn {
+.mb-lg, .explorer, .teslaProduct, .otherFeature__btn {
   margin-bottom: 80px !important;
 }
 
-.pb-sm, .explorer__texts, .popular__container {
+.pb-sm, .explorer__texts, .otherFeature__container {
   padding-bottom: 16px !important;
 }
 
@@ -1022,7 +1026,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .header__inner, .explorer, .teslaProduct, .popular__header, .popular__container, .footer {
+.content-width, .header__inner, .explorer, .teslaProduct, .otherFeature__header, .otherFeature__container, .footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -1038,7 +1042,7 @@ img {
   color: #535353;
 }
 
-.flex, .explorer__inner, .teslaProduct__inner, .popular__container, .footer__nav, .footer__ul {
+.flex, .explorer__inner, .teslaProduct__inner, .otherFeature__container, .footer__nav, .footer__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1209,11 +1213,11 @@ main {
       flex-basis: 100%;
 }
 
-.popular__inner {
+.otherFeature__inner {
   position: relative;
 }
 
-.popular__inner::before {
+.otherFeature__inner::before {
   display: block;
   content: "";
   position: absolute;
@@ -1224,24 +1228,33 @@ main {
   background: #eaebe6;
 }
 
-.popular__container {
+.otherFeature__container {
   position: relative;
   z-index: 2;
 }
 
-.popular__btn {
+.otherFeature__btn {
   text-align: center;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
 
-.popular__img {
+.otherFeature__btn span a {
+  color: black;
+  text-decoration: none;
+}
+
+.otherFeature__btn span a:hover {
+  color: white;
+}
+
+.otherFeature__img {
   height: 150px;
   overflow: hidden;
   margin-bottom: 5px;
 }
 
-.popular__img > img {
+.otherFeature__img > img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
@@ -1388,7 +1401,7 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  .flex, .explorer__inner, .teslaProduct__inner, .popular__container, .footer__nav, .footer__ul {
+  .flex, .explorer__inner, .teslaProduct__inner, .otherFeature__container, .footer__nav, .footer__ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1401,12 +1414,12 @@ Stylesheet: 600px以上のタブレットやモニタで適用
         flex-basis: 50%;
     margin-bottom: 60px;
   }
-  .popular__container {
+  .otherFeature__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .popular__item {
+  .otherFeature__item {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
@@ -1445,7 +1458,7 @@ Stylesheet: 960px以上のモニタで適用
   .font-sm, .sub-title {
     font-size: 16px;
   }
-  .font-md, .popular__title {
+  .font-md, .otherFeature__title {
     font-size: 19px;
   }
   .font-lr, .teslaProduct__title {
@@ -1454,17 +1467,17 @@ Stylesheet: 960px以上のモニタで適用
   .font-lg, .main-title {
     font-size: 36px;
   }
-  .mb-lg, .explorer, .teslaProduct, .popular__btn {
+  .mb-lg, .explorer, .teslaProduct, .otherFeature__btn {
     margin-bottom: 150px !important;
   }
   .pb-lg, .hero {
     padding-bottom: 150px !important;
   }
-  .popular__item {
+  .otherFeature__item {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
   }
-  .popular__img {
+  .otherFeature__img {
     height: 335px;
   }
   .explorer__img {
@@ -1502,7 +1515,7 @@ Stylesheet: 1280px以上のモニタで適用
   .explorer__inner {
     padding: 50px 150px;
   }
-  .popular__item {
+  .otherFeature__item {
     -ms-flex-preferred-size: 23%;
         flex-basis: 23%;
   }

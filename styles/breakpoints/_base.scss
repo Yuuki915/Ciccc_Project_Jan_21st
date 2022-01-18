@@ -75,6 +75,9 @@ main {
   transition: transform 0.5s, box-shadow 0.5s;
 }
 
+// -------------------
+// header
+// --------------------- 
 .header {
   position: fixed;
   top: 0;
@@ -195,7 +198,10 @@ main {
   }
 }
 
-.houses {
+// ------------------------
+// main (Find your Tesla)
+// ------------------------
+.teslaProduct {
   @extend .content-width;
   @extend .mb-lg;
 
@@ -311,6 +317,10 @@ main {
   }
 }
 
+
+// ------------------------
+// sns
+// ------------------------
 .side {
   display: none;
   position: fixed;

@@ -998,7 +998,7 @@ img {
   font-size: 17px;
 }
 
-.font-lr, .houses__title {
+.font-lr, .teslaProduct__title {
   font-size: 17px;
 }
 
@@ -1006,11 +1006,11 @@ img {
   font-size: 25px;
 }
 
-.mb-sm, .explorer__sub, .explorer__img, .houses__title, .popular__title {
+.mb-sm, .explorer__sub, .explorer__img, .teslaProduct__title, .popular__title {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, .explorer, .houses, .popular__btn {
+.mb-lg, .explorer, .teslaProduct, .popular__btn {
   margin-bottom: 80px !important;
 }
 
@@ -1022,7 +1022,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .header__inner, .explorer, .houses, .popular__header, .popular__container, .footer {
+.content-width, .header__inner, .explorer, .teslaProduct, .popular__header, .popular__container, .footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -1038,7 +1038,7 @@ img {
   color: #535353;
 }
 
-.flex, .explorer__inner, .houses__inner, .popular__container, .footer__nav, .footer__ul {
+.flex, .explorer__inner, .teslaProduct__inner, .popular__container, .footer__nav, .footer__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1203,7 +1203,7 @@ main {
           transform: translateY(-50%);
 }
 
-.houses__btn {
+.teslaProduct__btn {
   text-align: center;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -1388,7 +1388,7 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  .flex, .explorer__inner, .houses__inner, .popular__container, .footer__nav, .footer__ul {
+  .flex, .explorer__inner, .teslaProduct__inner, .popular__container, .footer__nav, .footer__ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1396,7 +1396,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .houses__item {
+  .teslaProduct__item {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     margin-bottom: 60px;
@@ -1448,13 +1448,13 @@ Stylesheet: 960px以上のモニタで適用
   .font-md, .popular__title {
     font-size: 19px;
   }
-  .font-lr, .houses__title {
+  .font-lr, .teslaProduct__title {
     font-size: 23px;
   }
   .font-lg, .main-title {
     font-size: 36px;
   }
-  .mb-lg, .explorer, .houses, .popular__btn {
+  .mb-lg, .explorer, .teslaProduct, .popular__btn {
     margin-bottom: 150px !important;
   }
   .pb-lg, .hero {

@@ -1,5 +1,5 @@
 // ------------------------
-// Slide pics
+// Main Slide pics
 // ------------------------
 .swiper-container {
   overflow: visible !important;
@@ -41,9 +41,6 @@
   }
 }
 
-// ------------------------
-// sns
-// ------------------------
 .hero {
   overflow: hidden;
   padding-top: $navHeight;
@@ -60,7 +57,7 @@
     opacity: 0;
     transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
   }
-
+  
   &__footer {
     position: absolute;
     left: 50%;
@@ -71,7 +68,7 @@
     width: 22px;
     overflow: hidden;
   }
-
+  
   &__downarrow {
     position: absolute;
     left: 0;
@@ -82,26 +79,27 @@
       $iteration-count: infinite,
       $duration: 2s,
       $timing-function: linear
-    );
+      );
+    }
+    
+    &__scrolltext {
+      position: absolute;
+      transform: rotate(90deg);
+      color: rgba(255, 255, 255, 0.7);
+      left: -8px;
+      top: 11px;
+      font-size: 1.2em;
+    }
+  }
+  
+  @keyframes kf-arrow-anime {
+    0%,
+    50%,
+    100% {
+      transform: translateY(-10%);
+    }
+    30% {
+      transform: none;
+    }
   }
 
-  &__scrolltext {
-    position: absolute;
-    transform: rotate(90deg);
-    color: rgba(255, 255, 255, 0.7);
-    left: -8px;
-    top: 11px;
-    font-size: 1.2em;
-  }
-}
-
-@keyframes kf-arrow-anime {
-  0%,
-  50%,
-  100% {
-    transform: translateY(-10%);
-  }
-  30% {
-    transform: none;
-  }
-}

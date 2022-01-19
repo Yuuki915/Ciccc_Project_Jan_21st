@@ -2,21 +2,33 @@
 
 @import "./colors";
 
-.main-text {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
 
-  h1 {
-    font-size: 1.8rem;
-    font-weight: bolder;
-    margin: 2rem 0;
-  }
+  .main-text {
+    font-family: "M PLUS Rounded 1c", sans-serif;
 
-  .ps {
-    margin-right: 4rem;
-    p {
-      font-size: 0.9rem;
-      padding-top: 1rem;
-      color: $lighter;
+    h1 {
+      font-size: 1.8rem;
+      font-weight: bolder;
+      margin: 2rem 0;
     }
+
+    .ps {
+      margin-right: 4rem;
+      p {
+        font-size: 0.9rem;
+        font-weight: 900;
+        padding-top: 1rem;
+        color: $lighter;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-wrapper {
+    display: block;
   }
 }

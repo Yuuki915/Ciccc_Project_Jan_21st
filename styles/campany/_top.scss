@@ -41,3 +41,11 @@
   height: 1px;
   background-color: rgb(240, 240, 240);
 }
+
+@media (max-width: 900px) {
+  .top {
+    & ul {
+      display: none;
+    }
+  }
+}

@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&family=Open+Sans:wght@300&display=swap");
+
 @import "./colors";
 
 .sidebar {
+  font-family: "M PLUS Rounded 1c", sans-serif;
   margin-top: 3rem;
 
   .firstp {
@@ -30,6 +33,17 @@
             border-bottom: 2.3px solid $darker;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    margin-top: 1rem;
+    .places {
+      div {
+        margin: 0.5rem 0;
       }
     }
   }

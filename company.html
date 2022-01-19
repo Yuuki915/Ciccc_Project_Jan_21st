@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Company</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./styles/company.css" />
   </head>
   <body>
@@ -11,8 +16,8 @@
       <div class="choseLang">
         <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')" />
         <label for="sEn">
-          <span class="langCng" lang="ja">英語</span>
-          <span class="langCng" lang="en">English</span>
+          <span class="langCng" lang="en">英語</span>
+          <span class="langCng" lang="ja">English</span>
         </label>
 
         <input
@@ -23,22 +28,51 @@
           checked
         />
         <label for="sJa">
-          <span class="langCng" lang="ja">日本語</span>
-          <span class="langCng" lang="en">Japanese</span>
+          <span class="langCng" lang="en">日本語</span>
+          <span class="langCng" lang="ja">Japanese</span>
         </label>
       </div>
 
-      <!-- --------------- texts --------------- -->
+      <!-- --------------- *** --------------- -->
 
-      <nav class="header__nav">
-        <ul class="header__ul">
-          <li class="header__li item"><a href="service.html">Service</a></li>
-          <li class="header__li item"><a href="company.html">Company</a></li>
-          <li class="header__li item">
-            <a class="btn filled" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <header class="header">
+        <div class="header__inner appear up">
+          <div class="logo item">
+            <img
+              src="images/tesla_logo.png"
+              alt=""
+              class="logo__img"
+              height="45"
+            />
+            <span class="logo__stay"
+              ><img src="images/tesla_logo02.png" width="130" height="60"
+            /></span>
+            <span class="logo__world">Canda</span>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__ul">
+              <li class="header__li item">
+                <a href="service.html">Service</a>
+              </li>
+              <li class="header__li item">
+                <a href="company.html">Company</a>
+              </li>
+              <li class="header__li item">
+                <a class="btn filled" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!------------------------
+      mobile-menu.scss  
+      ------------------------->
+          <button class="mobile-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
 
       <div class="top">
         <h1 class="about-h1 langCng" lang="en">About Tesla</h1>
@@ -226,37 +260,101 @@
           </div>
         </div>
       </div>
+
+      <footer class="footer appear up">
+        <div class="logo item">
+          <img src="images/tesla_logo.png" alt="" class="logo__img" />
+          <span class="logo__stay"
+            ><img src="images/tesla_logo02.png" width="130" height="60"
+          /></span>
+          <span class="logo__world">Canada</span>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__ul">
+            <li class="footer__li item"><a href="service.html">Service</a></li>
+            <li class="footer__li item"><a href="contact.html">Contact</a></li>
+            <li class="footer__li item"><a href="company.html">Company</a></li>
+            <li class="footer__li item">
+              <a
+                href="https://www.tesla.com/findus?v=2&bounds=51.983501615631575%2C-67.62597775%2C25.500764318167%2C-130.90722775&zoom=5&filters=store%2Cservice%2Csupercharger%2Cdestination%20charger%2Cbodyshop%2Cparty"
+                >Map</a
+              >
+            </li>
+          </ul>
+          <div class="footer__copyright item">&copy; Group 5</div>
+        </nav>
+      </footer>
+      <!------------------------
+        mobile-menu.scss  
+      ------------------------->
+      <nav class="mobile-menu">
+        <div class="logo">
+          <img src="images/tesla_logo.png" alt="" class="logo__img" />
+          <span class="logo__stay"
+            ><img src="images/tesla_logo02.png" width="130" height="60"
+          /></span>
+          <span class="logo__world">Canada</span>
+        </div>
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="service.html">
+              <span class="main-title">Our Service</span>
+              <!-- <span class="sub-title"></span> -->
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="company.html">
+              <span class="main-title">About Us</span>
+              <!-- <span class="sub-title"></span> -->
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="contact.html">
+              <span class="main-title">Contact Us</span>
+              <!-- <span class="sub-title"></span> -->
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </body>
 
-  <script>
-    // =========================================================
-    //      画面が開かれたときの初期設定
-    // =========================================================
-    window.onload = function () {
-      // --- ブラウザのデフォルト言語を取得して初回の表示 -----
-      var wDef = (
-        navigator.browserLanguage ||
-        navigator.language ||
-        navigator.userLanguage
-      ).substr(0, 2);
-      langSet(wDef);
-    };
-    // =========================================================
-    //      選択された言語のみ表示
-    // =========================================================
-    function langSet(argLang) {
-      // --- 切り替え対象のclass一覧を取得 ----------------------
-      var elm = document.getElementsByClassName("langCng");
+    <script>
+      // =========================================================
+      //      画面が開かれたときの初期設定
+      // =========================================================
+      window.onload = function () {
+        // --- ブラウザのデフォルト言語を取得して初回の表示 -----
+        var wDef = (
+          navigator.browserLanguage ||
+          navigator.language ||
+          navigator.userLanguage
+        ).substr(0, 2);
+        langSet(wDef);
+      };
+      // =========================================================
+      //      選択された言語のみ表示
+      // =========================================================
+      function langSet(argLang) {
+        // --- 切り替え対象のclass一覧を取得 ----------------------
+        var elm = document.getElementsByClassName("langCng");
 
-      for (var i = 0; i < elm.length; i++) {
-        // --- 選択された言語と一致は表示、その他は非表示 -------
-        if (elm[i].getAttribute("lang") == argLang) {
-          elm[i].style.display = "";
-        } else {
-          elm[i].style.display = "none";
+        for (var i = 0; i < elm.length; i++) {
+          // --- 選択された言語と一致は表示、その他は非表示 -------
+          if (elm[i].getAttribute("lang") == argLang) {
+            elm[i].style.display = "";
+          } else {
+            elm[i].style.display = "none";
+          }
         }
       }
-    }
-  </script>
+    </script>
+    <script src="scripts/vendors/swiper.min.js"></script>
+    <script src="scripts/vendors/TweenMax.min.js"></script>
+    <script src="scripts/vendors/scroll-polyfill.js"></script>
+    <script src="scripts/libs/scroll.js"></script>
+    <script src="scripts/libs/text-animation.js"></script>
+    <script src="scripts/libs/hero-slider.js"></script>
+    <script src="scripts/libs/mobile-menu.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>

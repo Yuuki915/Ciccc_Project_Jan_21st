@@ -1,15 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&family=Open+Sans:wght@300&display=swap");
+@import "./modules/variables";
+@import "modules/mixin";
+@import "modules/button";
 @import "./campany/top";
 @import "./campany/mails";
 @import "./campany/p";
+@import "./campany/headerFooter";
+@import "modules/mobile-menu";
+
+@import "breakpoints/base";
 
 * {
   margin: 0;
   padding: 0;
 }
 body {
+  font-family: "Kameron", "Noto Sans JP", sans-serif;
   margin: 0 15%;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  //   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 900;
   letter-spacing: 1.5px;
 }
@@ -30,9 +37,43 @@ body {
   border: 1px solid #ccc;
   box-shadow: 2px 2px #999;
   padding: 2px 6px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 /* === 選択されている言語のラベル色を変更 ==== */
 #sample1 input[type="radio"]:checked + label {
-  background: #ffa64d;
+  background: #904669b0;
+}
+
+// スマホを横に傾けた状態
+@media (min-width: 480px) {
+  @import "./breakpoints/480up";
+}
+
+// タブレット
+@media (min-width: 600px) {
+  @import "./breakpoints/600up";
+}
+
+// タブレットを横にした状態か、小さいPC
+@media (min-width: 960px) {
+  @import "./breakpoints/960up";
+}
+
+// PC用
+@media (min-width: 1280px) {
+  @import "./breakpoints/1280up";
+}
+
+// 解像度
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+  @import "./breakpoints/2x";
+}
+
+// プリント用
+@media print {
+  @import "./breakpoints/print";
 }

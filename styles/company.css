@@ -476,11 +476,16 @@
           transform: translateY(-11px) rotate(-135deg);
 }
 
+.navbar {
+  display: none;
+}
+
 @media (max-width: 960px) {
   .navbar {
+    display: block;
     position: relative;
   }
-  .navbar #humberger {
+  .navbar #hamburger {
     opacity: 0;
     position: fixed;
   }
@@ -537,8 +542,13 @@
     -webkit-box-shadow: -3px -3px 10px #999;
             box-shadow: -3px -3px 10px #999;
   }
-  .navbar #menu .logo {
+  .navbar #menu .hamlogo {
     margin-top: 5rem;
+    font-size: 38px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 3rem;
   }
   .navbar #menu p {
     position: relative;
@@ -555,26 +565,26 @@
   .navbar #menu p a:hover {
     color: #904669;
   }
-  #humberger:checked ~ #menu {
+  #hamburger:checked ~ #menu {
     top: 0;
     right: 0;
   }
-  #humberger:checked + label .lines .line1 {
+  #hamburger:checked + label .lines .line1 {
     top: 10%;
     width: 80%;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
-  #humberger:checked + label .lines .line2 {
+  #hamburger:checked + label .lines .line2 {
     width: 0;
   }
-  #humberger:checked + label .lines .line3 {
+  #hamburger:checked + label .lines .line3 {
     top: 10%;
     width: 80%;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-  #humberger:checked ~ .light-dark {
+  #hamburger:checked ~ .light-dark {
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
     width: 100%;

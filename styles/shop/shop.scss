@@ -45,6 +45,7 @@ ul {
     transition: all 0.3s ease-in-out;
 
     img {
+      width: 100vw;
       height: calc(100vh - 100px);
       object-fit: cover;
       object-position: center;
@@ -171,6 +172,7 @@ ul {
 }
 
 .gallery-container {
+  padding: 1rem;
   overflow: hidden;
   display: grid;
   gap: 1.5rem;
@@ -237,6 +239,10 @@ ul {
     p {
       @include galleryText;
       top: 20%;
+    }
+
+    img {
+      transform: scale(1.1);
     }
   }
 

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tesla Canada</title>
+    <meta name="description" content="This site is a test site." />
+    <link rel="icon" href="images/" />
+    <link rel="stylesheet" href="styles/loader.css" />
+    <script src="scripts/vendors/pace.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ↓bootstrap-reboot = reset cssと言われるコードをlinkタグの一番上に貼ることで、既存のスタイルをリセットできる。 -->
+    <!-- 注意点.....コードの最後や途中に貼るとスタイルが崩れるので、必ず一番最初に貼ること！ -->
+    <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="styles/vendors/swiper.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./styles/shop.css" />
+  </head>
+  <body>
+    <div id="global-container">
+      <div id="container">
+        <div class="mobile-menu__cover"></div>
+        <div class="nav-trigger"></div>
+
+        <!---------------------
+           header 
+        ----------------------->
+        <header class="header">
+          <div class="header__inner appear up">
+            <div class="logo item">
+              <img
+                src="images/tesla_logo.png"
+                alt=""
+                class="logo__img"
+                height="45"
+              />
+              <span class="logo__stay"
+                ><img src="images/tesla_logo02.png" width="130" height="60"
+              /></span>
+              <span class="logo__world">Canada</span>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__ul">
+                <li class="header__li item">
+                  <a href="service.html">Service</a>
+                </li>
+                <li class="header__li item">
+                  <a href="company.html">Company</a>
+                </li>
+                <li class="header__li item">
+                  <a class="btn filled" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!------------------------
+        mobile-menu.scss  
+        ------------------------->
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+
+        <!-- * Showcase -->
+        <main>
+          <section id="showcase">
+            <ul class="showcase-container">
+              <li class="img current">
+                <a href="#"
+                  ><img src="./images/shop/showcase-1.webp" alt=""
+                /></a>
+                <div class="content">
+                  <h1>Wall Connector</h1>
+                  <h2>The fastest way to charge at home</h2>
+                </div>
+              </li>
+              <li class="img">
+                <a href="#"
+                  ><img src="./images/shop/showcase-2.webp" alt=""
+                /></a>
+                <div class="content">
+                  <h1>Model Y All-Weather Interior Liners</h1>
+                  <h2>A clean interior, in any weather</h2>
+                </div>
+              </li>
+              <li class="img">
+                <a href="#"
+                  ><img src="./images/shop/showcase-3.webp" alt=""
+                /></a>
+              </li>
+            </ul>
+            <i class="fas fa-chevron-left fa-4x btn-slide-left"></i>
+            <i class="fas fa-chevron-right fa-4x btn-slide-right"></i>
+          </section>
+
+          <section id="best-seller">
+            <div class="best-seller-header">
+              <h2>Best Sellers</h2>
+              <a href="#"><p>Shop All</p></a>
+            </div>
+            <ul class="best-seller-container">
+              <li>
+                <a href="#"><img src="./images/shop/bs-1.webp" alt="" /></a>
+                <p>Wireless Portable Charger 2.0</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/bs-2.webp" alt="" /></a>
+                <p>Women’s Chill Cropped Crew Sweatshirt</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/bs-3.webp" alt="" /></a>
+                <p>Men's Raven Lightweight Bomber Jacket</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/bs-4.webp" alt="" /></a>
+                <p>Model S Roof Rack - Glass Roof</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/bs-5.webp" alt="" /></a>
+                <p>Model Y All-Weather Interior Liners</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/bs-6.webp" alt="" /></a>
+                <p>Model 3 Illuminated Door Sills</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/bs-7.webp" alt="" /></a>
+                <p>Men's Chill Crew Neck Sweatshirt</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/bs-8.webp" alt="" /></a>
+                <p>Wall Connector</p>
+              </li>
+            </ul>
+            <i class="fas fa-chevron-circle-left fa-3x btn-scroll-left"></i>
+            <i class="fas fa-chevron-circle-right fa-3x btn-scroll-right"></i>
+          </section>
+
+          <section id="gallery">
+            <h2>More to explore</h2>
+
+            <ul class="gallery-container">
+              <li>
+                <a href="#"><img src="./images/shop/g-1.webp" alt="" /></a>
+                <p>Model S Accessories</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/g-2.jpeg" alt="" /></a>
+                <p>Model 3 Accessories</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/g-3.webp" alt="" /></a>
+                <p>Model X Accessories</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/g-4.webp" alt="" /></a>
+                <p>Model Y Accessories</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/g-5.webp" alt="" /></a>
+                <p>Charging</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/g-6.webp" alt="" /></a>
+                <p>Men's Apparel</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/g-7.webp" alt="" /></a>
+                <p>Women's Apparel</p>
+              </li>
+              <li>
+                <a href="#"><img src="./images/shop/g-8.webp" alt="" /></a>
+                <p>Lifestyle</p>
+              </li>
+            </ul>
+          </section>
+        </main>
+        <footer class="footer appear up">
+          <div class="logo item">
+            <img src="images/tesla_logo.png" alt="" class="logo__img" />
+            <span class="logo__stay"
+              ><img src="images/tesla_logo02.png" width="130" height="60"
+            /></span>
+            <span class="logo__world">Canada</span>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__ul">
+              <li class="footer__li item">
+                <a href="service.html">Service</a>
+              </li>
+              <li class="footer__li item">
+                <a href="contact.html">Contact</a>
+              </li>
+              <li class="footer__li item">
+                <a href="company.html">Company</a>
+              </li>
+              <li class="footer__li item">
+                <a
+                  href="https://www.tesla.com/findus?v=2&bounds=51.983501615631575%2C-67.62597775%2C25.500764318167%2C-130.90722775&zoom=5&filters=store%2Cservice%2Csupercharger%2Cdestination%20charger%2Cbodyshop%2Cparty"
+                  >Map</a
+                >
+              </li>
+            </ul>
+
+            <div class="footer__copyright item">&copy; Group 5</div>
+          </nav>
+        </footer>
+      </div>
+    </div>
+
+    <!-- main.jsは必ず下に置く -->
+    <script src="scripts/vendors/swiper.min.js"></script>
+    <script src="scripts/vendors/TweenMax.min.js"></script>
+    <script src="scripts/vendors/scroll-polyfill.js"></script>
+    <script src="scripts/libs/scroll.js"></script>
+    <script src="scripts/libs/text-animation.js"></script>
+    <script src="scripts/libs/hero-slider.js"></script>
+    <script src="scripts/libs/mobile-menu.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="./scripts/shop/shop.js"></script>
+  </body>
+</html>

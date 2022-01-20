@@ -1,0 +1,279 @@
+@import 'config';
+@import 'utilities';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-roboto;
+  background-color: #e5e5e5;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#container {
+  background-color: #e5e5e5;
+}
+
+#showcase {
+  margin-top: 100px;
+  height: calc(100vh - 100px);
+  background: $color-black;
+}
+
+.showcase-container {
+  position: relative;
+  color: $color-white;
+  .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+    img {
+      height: calc(100vh - 100px);
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+  }
+
+  .current {
+    opacity: 1;
+
+    .content {
+      transform: translateY(150px);
+      visibility: visible;
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font-family: $font-electrolize;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out 0.3s;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.btn-slide-left {
+  left: 10px;
+  @include btn-slide;
+}
+
+.btn-slide-right {
+  right: 10px;
+  @include btn-slide;
+}
+
+// ***
+
+#best-seller {
+  margin: 1rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.best-seller-header {
+  @include center;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 2rem;
+    padding-left: 0.8rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    font-family: $font-electrolize;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: lighten($color: $color-black, $amount: 50%);
+  }
+}
+
+.best-seller-container {
+  display: flex;
+  transform: translate(0);
+  transition: all 0.5s ease-in-out;
+
+  li {
+    position: relative;
+    flex: 0 0 32%;
+    margin: 0.8rem;
+    @include card;
+
+    p {
+      position: absolute;
+      color: $color-white;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      bottom: 0;
+      padding: 1rem;
+      background-color: rgba($color: #000000, $alpha: 0.7);
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.btn-scroll-left {
+  left: 20px;
+  @include btn-scroll;
+}
+
+.btn-scroll-right {
+  right: 20px;
+  @include btn-scroll;
+}
+
+// ***
+
+#gallery {
+  margin: 1.8rem;
+
+  h2 {
+    color: $color-primary;
+    font-family: $font-electrolize;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+}
+
+.gallery-container {
+  overflow: hidden;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas:
+    'img-1 img-1'
+    'img-2 img-3'
+    'img-2 img-3'
+    'img-4 img-4'
+    'img-5 img-6'
+    'img-5 img-7'
+    'img-8 img-8';
+
+  li {
+    position: relative;
+    transition: all 1s ease-in-out 0.8s;
+    opacity: 0;
+    @include card;
+  }
+
+  li:first-child {
+    grid-area: img-1;
+    transform: translateX(-1500px);
+    p {
+      @include galleryText;
+      right: 8%;
+    }
+  }
+
+  li:nth-child(2) {
+    grid-area: img-2;
+    @include center;
+    transform: translateX(-750px);
+
+    p {
+      @include galleryText;
+    }
+  }
+
+  li:nth-child(3) {
+    grid-area: img-3;
+    @include center;
+    transform: translateX(750px);
+
+    p {
+      @include galleryText;
+    }
+  }
+
+  li:nth-child(4) {
+    grid-area: img-4;
+    transform: translateX(1500px);
+
+    p {
+      @include galleryText;
+      left: 8%;
+    }
+  }
+
+  li:nth-child(5) {
+    grid-area: img-5;
+    @include center;
+    transform: translateX(-750px);
+
+    p {
+      @include galleryText;
+      top: 20%;
+    }
+  }
+
+  li:nth-child(6) {
+    grid-area: img-6;
+    @include center;
+    transform: translateX(750px);
+
+    p {
+      @include galleryText;
+    }
+  }
+
+  li:nth-child(7) {
+    @include center;
+    grid-area: img-7;
+    transform: translateX(750px);
+
+    p {
+      @include galleryText;
+    }
+  }
+
+  li:nth-child(8) {
+    grid-area: img-8;
+    transform: translateX(-1500px);
+
+    p {
+      @include galleryText;
+      left: 8%;
+    }
+  }
+}
+
+.show {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+@import 'mobile';

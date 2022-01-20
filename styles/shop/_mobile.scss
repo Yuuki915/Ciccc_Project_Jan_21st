@@ -1,0 +1,35 @@
+@media (max-width: 858px) {
+  .showcase-container {
+    li:last-child img {
+      object-position: -700px;
+    }
+  }
+
+  .best-seller-container {
+    flex-wrap: wrap;
+    li {
+      flex: 1 0 40%;
+      margin: 0.4rem;
+    }
+    p {
+      font-size: 0.6rem;
+      padding: 0.5rem !important;
+    }
+  }
+
+  .btn-scroll-left {
+    display: none;
+  }
+
+  .btn-scroll-right {
+    display: none;
+  }
+
+  .gallery-container {
+    gap: 1rem;
+
+    p {
+      font-size: 0.7rem !important;
+    }
+  }
+}

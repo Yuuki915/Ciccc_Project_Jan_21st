@@ -185,7 +185,7 @@ ul {
 
   li {
     position: relative;
-    transition: all 1s ease-in-out 0.8s;
+    transition: all 1s ease-in-out;
     opacity: 0;
     @include card;
   }

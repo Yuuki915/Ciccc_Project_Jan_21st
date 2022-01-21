@@ -1,5 +1,5 @@
-@import 'config';
-@import 'utilities';
+@import "config";
+@import "utilities";
 
 * {
   padding: 0;
@@ -175,13 +175,13 @@ ul {
   display: grid;
   gap: 1.5rem;
   grid-template-areas:
-    'img-1 img-1'
-    'img-2 img-3'
-    'img-2 img-3'
-    'img-4 img-4'
-    'img-5 img-6'
-    'img-5 img-7'
-    'img-8 img-8';
+    "img-1 img-1"
+    "img-2 img-3"
+    "img-2 img-3"
+    "img-4 img-4"
+    "img-5 img-6"
+    "img-5 img-7"
+    "img-8 img-8";
 
   li {
     position: relative;
@@ -276,4 +276,4 @@ ul {
   opacity: 1 !important;
 }
 
-@import 'mobile';
+@import "mobile";

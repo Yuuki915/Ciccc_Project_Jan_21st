@@ -30,16 +30,66 @@
            header 
         ----------------------->
         <header class="header">
+          <!-- ----- hamburger start ----- -->
+          <div class="navbar">
+            <input type="checkbox" id="hamburger" />
+            <label for="hamburger">
+              <div class="lines">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+              </div>
+            </label>
+            <label class="light-dark" for="hamburger"></label>
+
+            <ul id="menu">
+              <div class="hamlogo">
+                <a href="./index.html">
+                  <img
+                    src="images/tesla_logo.png"
+                    alt=""
+                    class="logo__img"
+                    height="45"
+                  />
+                </a>
+                <span class="hamlogo2">
+                  <a href="./index.html">
+                    <img
+                      src="images/tesla_logo02.png"
+                      width="130"
+                      height="60"
+                    />
+                  </a>
+                </span>
+              </div>
+              <p><a href="./service.html">SERVICE</a></p>
+              <p><a href="./company.html">COMPANY</a></p>
+              <p><a href="./shop.html">SHOP</a></p>
+              <p><a href="./contact.html">CONTACT</a></p>
+            </ul>
+          </div>
+          <!-- ----- hamburger end ----- -->
           <div class="header__inner appear up">
             <div class="logo item">
-              <img src="images/tesla_logo.png" alt="" class="logo__img" height="45"/>
-              <span class="logo__stay"><img src="images/tesla_logo02.png" width="130" height="60"></span>
+              <img
+                src="images/tesla_logo.png"
+                alt=""
+                class="logo__img"
+                height="45"
+              />
+              <span class="logo__stay"
+                ><img src="images/tesla_logo02.png" width="130" height="60"
+              /></span>
               <span class="logo__world">Canada</span>
             </div>
             <nav class="header__nav">
               <ul class="header__ul">
-                <li class="header__li item"><a href="service.html">Service</a></li>
-                <li class="header__li item"><a href="company.html">Company</a></li>
+                <li class="header__li item">
+                  <a href="service.html">Service</a>
+                </li>
+                <li class="header__li item">
+                  <a href="company.html">Company</a>
+                </li>
                 <li class="header__li item"><a href="shop.html">Shop</a></li>
                 <li class="header__li item">
                   <a class="btn filled" href="contact.html">Contact</a>
@@ -50,11 +100,11 @@
             <!------------------------
         mobile-menu.scss  
         ------------------------->
-            <button class="mobile-menu__btn">
+            <div class="mobile-menu__btn">
+              <!-- <span></span>
               <span></span>
-              <span></span>
-              <span></span>
-            </button>
+              <span></span> -->
+            </div>
           </div>
         </header>
 
@@ -309,7 +359,7 @@
       <!------------------------
         mobile-menu.scss  
       ------------------------->
-      <nav class="mobile-menu">
+      <!-- <nav class="mobile-menu">
         <div class="logo">
           <img src="images/tesla_logo.png" alt="" class="logo__img" />
           <span class="logo__stay"
@@ -321,23 +371,23 @@
           <li class="mobile-menu__item">
             <a class="mobile-menu__link" href="service.html">
               <span class="main-title">Our Service</span>
-              <!-- <span class="sub-title"></span> -->
+              
             </a>
           </li>
           <li class="mobile-menu__item">
             <a class="mobile-menu__link" href="company.html">
               <span class="main-title">About Us</span>
-              <!-- <span class="sub-title"></span> -->
+              
             </a>
           </li>
           <li class="mobile-menu__item">
             <a class="mobile-menu__link" href="contact.html">
               <span class="main-title">Contact Us</span>
-              <!-- <span class="sub-title"></span> -->
+              
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
     </div>
 
     <!-- main.jsは必ず下に置く -->

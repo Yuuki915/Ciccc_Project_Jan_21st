@@ -1,98 +1,102 @@
-// @import "../modules/variables";
-// @import "../breakpoints/base";
-// @import "../modules/mobile-menu";
+@import "../modules/variables";
+@import "../breakpoints/base";
+@import "../modules/mobile-menu";
 
-// .content-width {
-//   width: 90%;
-//   margin: 0 auto;
-//   max-width: $contentMaxWidth;
-// }
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
 
-// // -------------------
-// // header
-// // ---------------------
-// .header {
-//   font-family: "Kameron", "Noto Sans JP", sans-serif;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: $navHeight;
-//   background-color: transparent;
-//   display: flex;
-//   align-items: center;
-//   z-index: 100;
+// -------------------
+// header
+// ---------------------
+.header {
+  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $navHeight;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 100;
 
-//   &.triggered {
-//     background-color: rgba(255, 255, 255, 0.9);
-//     box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
-//   }
+  &.triggered {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
+  }
 
-//   &__nav {
-//     // display: none;
-//   }
+  &__nav {
+    // display: none;
+  }
 
-//   &__ul {
-//     display: flex;
-//     align-items: center;
-//     padding: 0;
-//     margin: 0;
-//     list-style: none;
-//   }
+  &__ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 
-//   &__li {
-//     margin-left: 20px;
+  &__li {
+    margin-left: 20px;
 
-//     & > a {
-//       color: $cBlack;
-//       text-decoration: none !important;
-//       text-transform: uppercase;
-//     }
-//   }
-// }
+    & > a {
+      color: $cBlack;
+      text-decoration: none !important;
+      text-transform: uppercase;
+    }
+  }
+}
 
-// .logo {
-//   font-size: 42px;
-//   display: flex;
+.logo {
+  font-size: 42px;
+  display: flex;
 
-//   &__img {
-//     width: 0.7em;
-//   }
+  &__img {
+    width: 0.7em;
+  }
 
-//   &__world {
-//     color: $cWineRed;
-//   }
-// }
+  &__world {
+    color: $cWineRed;
+  }
+}
 
-// .footer {
-//   padding: 60px 0;
-//   @extend .content-width;
+.footer {
+  padding: 60px 0;
+  @extend .content-width;
 
-//   &__nav {
-//     @extend .flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     text-align: center;
-//   }
+  &__nav {
+    @extend .flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
 
-//   &__ul {
-//     @extend .flex;
-//     padding: 0;
-//     margin: 0;
-//     list-style: none;
-//   }
+  &__ul {
+    @extend .flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 
-//   &__li {
-//     padding: 0;
-//     margin: 10px;
+  &__li {
+    padding: 0;
+    margin: 10px;
 
-//     & > a {
-//       color: $cSubTitle;
-//     }
-//   }
+    & > a {
+      color: $cSubTitle;
+    }
+  }
 
-//   & .logo {
-//     font-size: 38px;
-//     justify-content: center;
-//   }
-// }
+  & .logo {
+    font-size: 38px;
+    justify-content: center;
+
+    &__img {
+      width: 0.7em;
+    }
+  }
+}

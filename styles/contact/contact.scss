@@ -1,0 +1,248 @@
+$black: #dfdfdf;
+$cWhite: white;
+$cBlack: black;
+$cSubTitle: #535353;
+$cBgGray: #eaebe6;
+$cWineRed: #904669;
+$contentMaxWidth: 1070px;
+$navHeight: 100px;
+$cMenuClose: $cBlack;
+$cMenuOpen: $cBlack;
+
+@import "./modules/variables";
+@import "modules/mixin";
+@import "modules/button";
+@import "./campany/top";
+@import "./campany/mails";
+@import "./campany/p";
+@import "./campany/headerFooter";
+@import "modules/mobile-menu";
+@import "./campany/hum";
+
+@mixin box() {
+  outline: none;
+  border: none;
+  background: $black;
+  color: rgb(100, 100, 100);
+  text-transform: lowercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../images/tesla2.jpg") no-repeat center center;
+  background-size: auto;
+  background-position: center;
+  margin-top: 15%;
+  font-family: "Kameron", "Noto Sans JP", sans-serif;
+}
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+main {
+  position: relative;
+  z-index: -1;
+}
+#container {
+  background-color: $cWhite;
+  position: relative;
+  z-index: 10;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+#contact {
+  height: auto;
+  width: auto;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  color: black;
+  margin: auto;
+}
+
+.contact-container {
+  width: 40%;
+  height: 80%;
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 100px;
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+
+    span {
+      color: black;
+    }
+  }
+
+  form {
+    .column {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(20rem, 1fr));
+      grid-gap: 10px;
+
+      .box {
+        @include box();
+        height: 40px;
+        padding: 10px;
+
+        &::placeholder {
+          color: rgb(100, 100, 100);
+        }
+      }
+    }
+    .msg-box {
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      @include box();
+
+      &::placeholder {
+        color: rgb(100, 100, 100);
+      }
+    }
+
+    input[type="submit"] {
+      @include box();
+      padding: 1rem 2rem;
+      cursor: pointer;
+      text-transform: uppercase;
+      background: #000000;
+      color: #dfdfdf;
+
+      &:hover {
+        background: #904669;
+      }
+    }
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Kameron", "Noto Sans JP", sans-serif;
+
+  &.triggered {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
+  }
+  &__ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: black;
+  }
+
+  &__li {
+    margin-left: 20px;
+    color: black;
+    & > a {
+      color: $cBlack;
+      text-decoration: none !important;
+      text-transform: uppercase;
+      color: black;
+    }
+  }
+  & .logo {
+    font-size: 38px;
+    justify-content: center;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    @extend .content-width;
+  }
+
+  .btn {
+    position: relative;
+    display: inline-block;
+    background-color: #000000;
+    border: 1px solid $cBlack;
+    font-weight: 600;
+    padding: 10px 40px;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #fff;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    &.filled {
+      background-color: $cBlack;
+      color: $cWhite;
+      box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+      &:hover {
+        background-color: $cWhite;
+        color: $cBlack;
+        box-shadow: none;
+      }
+    }
+  }
+}
+.logo__world {
+  color: $cWineRed;
+}
+
+@media (max-width: 1224px) {
+  html {
+    font-size: 55%;
+  }
+  #contact {
+    .contact-container {
+      form {
+        .column {
+          grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+  #contact {
+    .contact-container {
+      form {
+        .column {
+          grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #contact {
+    .contact-container {
+      form {
+        .column {
+          grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        }
+      }
+    }
+  }
+}

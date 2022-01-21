@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="icon" href="images/" />
+    <script src="scripts/vendors/pace.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/contact.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- ----- hamburger start ----- -->
+      <div class="navbar">
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger">
+          <div class="lines">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+        </label>
+        <label class="light-dark" for="hamburger"></label>
+
+        <ul id="menu">
+          <div class="hamlogo">
+            <a href="./index.html">
+              <img
+                src="images/tesla_logo.png"
+                alt=""
+                class="logo__img"
+                height="45"
+              />
+            </a>
+            <span class="hamlogo2">
+              <a href="./index.html">
+                <img src="images/tesla_logo02.png" width="130" height="60" />
+              </a>
+            </span>
+          </div>
+          <p><a href="./service.html">SERVICE</a></p>
+          <p><a href="./company.html">COMPANY</a></p>
+          <p><a href="./shop.html">SHOP</a></p>
+          <p><a href="./contact.html">CONTACT</a></p>
+        </ul>
+      </div>
+      <!-- ----- hamburger end ----- -->
+
+      <div class="header__inner appear up">
+        <div class="logo item">
+          <a href="./index.html">
+            <img
+              src="images/tesla_logo.png"
+              alt=""
+              class="logo__img"
+              height="45"
+            />
+          </a>
+          <span class="logo__stay">
+            <a href="./index.html">
+              <img src="images/tesla_logo02.png" width="130" height="60" />
+            </a>
+          </span>
+          <span class="logo__world">Canda</span>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__ul">
+            <li class="header__li item">
+              <a href="service.html">Service</a>
+            </li>
+            <li class="header__li item">
+              <a href="company.html">Company</a>
+            </li>
+            <li class="header__li item">
+              <a href="shop.html">Shop</a>
+            </li>
+
+            <li class="header__li item">
+              <a class="btn filled" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!------------------------
+      mobile-menu.scss  
+      ------------------------->
+        <!-- <button class="mobile-menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button> -->
+      </div>
+    </header>
+
+    <section id="contact">
+      <div class="contact-container">
+        <h1><span> contact us</span></h1>
+        <form action="">
+          <div class="column">
+            <input type="text" placeholder="first name" class="box" />
+            <input type="text" placeholder="last name" class="box" />
+            <input type="email" placeholder="e-mail" class="box" />
+            <input type="number" placeholder="phone" class="box" />
+          </div>
+          <textarea
+            placeholder="type your message.."
+            cols="30"
+            rows="10"
+            class="msg-box"
+          ></textarea>
+          <input type="submit" value="send" />
+        </form>
+      </div>
+    </section>
+
+    <script src="scripts/vendors/swiper.min.js"></script>
+    <script src="scripts/vendors/TweenMax.min.js"></script>
+    <script src="scripts/vendors/scroll-polyfill.js"></script>
+    <script src="scripts/libs/scroll.js"></script>
+    <script src="scripts/libs/text-animation.js"></script>
+    <script src="scripts/libs/hero-slider.js"></script>
+    <script src="scripts/libs/mobile-menu.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>

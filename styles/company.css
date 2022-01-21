@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&family=Open+Sans:wght@300&display=swap");
 .btn {
   position: relative;
   display: inline-block;
@@ -1035,10 +1036,9 @@ li {
 
 /* === 各ラジオボタンのラベルをボタンに変更 == */
 #EnJp .choseLang label {
-  display: inline-block;
+  display: block;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   border: 1px solid #ccc;
-  -webkit-box-shadow: 2px 2px #999;
-          box-shadow: 2px 2px #999;
   padding: 2px 6px;
 }
 
